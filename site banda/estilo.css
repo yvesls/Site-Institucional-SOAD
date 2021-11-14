@@ -1,0 +1,478 @@
+/* classes padrões --------------------------------------------------------------------------------------------------------------*/
+html { 
+    scroll-behavior: smooth;
+    font-size: calc(60% + 0.5vmin);
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-name {
+    text-indent: -9999px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.text-oliver:hover {
+    color: rgb(185, 185, 185);
+    text-decoration: underline 3px #556b2f;
+}
+
+.active {
+    color: rgb(185, 185, 185);
+    text-decoration: underline 3px #556b2f;
+}
+
+.active:hover {
+    color: rgb(185, 185, 185);
+    text-decoration: underline 3px #556b2f;
+}
+
+.text-oliver {
+    color: floralwhite;
+}
+
+.text-center1 {
+    text-align: center;
+}
+
+.shadow-text {
+    text-shadow: 1px 1px 1px black;
+}
+
+.text-oliver-true {
+    color: #556b2f;
+}
+
+a:hover {
+    text-decoration: none;
+} 
+
+li{
+    list-style-type: none;
+}
+
+.bg-darkgreen {    
+    background-image: linear-gradient(to top, #172008, #19220a, #1b240b, #1d270d, #1f290e);
+}
+
+.format-button {
+    float: left;
+    border: none;
+    border-radius: 5%;
+    padding: 0.5% 1% 0.3% 1%;
+    color: black;
+    background-image: linear-gradient(to top, #172008, #19220a, #1b240b, #1d270d, #1f290e);
+}
+.format-button:hover {
+    border: none;
+    background-image: linear-gradient(to bottom, #172008, #19220a, #1b240b, #1d270d, #1f290e);
+}
+
+.format-button:active {
+    position: relative;
+    top: 1px;
+    border: none;
+}
+
+/* formatação da nav responsiva */
+
+#nav-formatacao li {
+    padding: 1% 2%;
+    text-shadow: 1px 1px 1px black;
+}
+
+#nav-formatacao li:hover {
+    background-image: linear-gradient(to bottom, #172008, #19220a, #1b240b, #1d270d, #1f290e);
+    color: #cacaca;
+}
+
+/* banner --------------------------------------------------------------------------------------------------------------*/
+
+.pelicula-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6ba10d09;
+}
+
+.z-img-banner {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 50%;
+}
+/* acertando as margens das imagens da sessão biografia --------------------------------------------------------------------------------------------------------------*/
+.margin-restory {
+    margin: 0px -10%;
+}
+/* biografia --------------------------------------------------------------------------------------------------------------*/
+.principal {
+    margin-top: -5%;
+}
+
+.img1 {
+    background: url(imagens/banda2.jpg);
+    background-size: 100%;
+    height: 300px;
+}
+
+.img2{
+    max-height: 670px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.tam-font {
+    font-size: 0.8em;
+}
+
+.linha {
+    background-color: #556b2f;
+    width: 50px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.fundo-bio {
+    background: url(imagens/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+.fundo-transp {
+    background: rgba(26, 53, 14, 0.294);
+    margin: 0 -16px;
+    height: 100%;
+    
+}
+
+.proximo-show {
+    height: auto;
+    margin: 1% 0;
+}
+
+.bio {
+    float: left;
+    height: auto;
+    padding-bottom: 10%;
+    color: #556b2f;
+    background-color: #f8eddf;
+    z-index: 2;
+    margin-bottom: -6%;
+}
+
+.bio p {
+    text-indent: 15px;
+    font-size: 0.8em;
+    padding-right: 1%;
+}
+
+.efeito-fundo {
+    z-index: 4;
+    height: 60px;
+    width: 100%;
+    background: url(imagens/fundo1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+/* biografia - integrantes --------------------------------------------------------------------------------------------------------------*/
+.integrantes {
+    z-index: 1;
+    font-size: 0.8em;
+    float: right;
+    background-color: darkolivegreen;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.names {
+    font-size: 1.2em;
+}
+
+.integrantes-elenco {
+    margin: 3% auto;
+    width: 92%;
+}
+
+.ajusta-img {
+    width: 22%;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.ajusta-img p {
+    color: #556b2f;
+    margin-bottom: -5px;
+}
+/* shows --------------------------------------------------------------------------------------------------------------*/
+.shows {
+    z-index: 3;
+    color: white;
+    background: url(imagens/show.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    font-size: 1rem;
+    margin-top: -1%;
+    background-color: #172008;
+}
+
+.quebra {
+    width: 100%;
+    height: 25px;
+    background-color: #556b2f;
+    -webkit-box-shadow: inset 0px 0px 5px 5px #556b2f; 
+    box-shadow: inset 0px 0px 2px 5px #556b2f;
+    z-index: 3;
+}
+
+.fundo-trasp-shows {
+    background: rgba(15, 37, 6, 0.52);
+}
+
+.linha-shows {
+    width: 30%;
+    height: 2px;
+    background-color: #556b2f;
+}
+
+table{
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid #556b2f;
+    padding: 2%;
+    padding-right: 1%;
+}
+
+table td {
+    border-bottom: 2px solid #556b2f;
+    padding: 0px 5%;
+    padding-right: 5%;
+}
+
+.pl-table {
+    padding-left: 1%;
+}
+/* fotos parte de shows --------------------------------------------------------------------------------------------------------------*/
+.mtop-fotos {
+    top: 50px;
+}
+
+.mb-manual {
+    margin-bottom: 150px;
+}
+
+.fotos {
+    margin-top: 150px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+}
+
+#height {
+    height: 400px;
+    overflow: hidden;
+}
+
+.shadow-fotos {
+    box-shadow: 0px 80px 150px black;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+button#mais {
+    top: 365px;
+    left: 50%;
+    padding: 5px 20px;
+    border: none;
+    color: #f8eddf;
+    background-color: #556b2f;
+}
+
+button#mais:hover {
+    color: #556b2f;
+    background-color: #f8eddf;
+}
+
+button#mais:active {
+    border: 1px solid #556b2f;
+}
+
+button#menos {
+    top: 365px;
+    right: 50%;
+    margin: auto;
+    padding: 5px 20px;
+    border: none;
+    color: #f8eddf;
+    background-color: #6d883e;
+}
+
+button#menos:hover {
+    color: #6d883e;
+    background-color: #f8eddf;
+}
+/* ouça nossas músicas --------------------------------------------------------------------------------------------------------------*/
+.quebra2 {
+    width: 100%;
+    height: 25px;
+    background-color: #172008;
+    margin-bottom: -1.5%;
+}
+
+.albuns {
+    background-color: #172008;
+    color: #f8eddf;
+}
+
+#buttom-load1, #buttom-load2, #buttom-load3, #buttom-load4, #buttom-load5, #buttom-load6, #buttom-load7, #buttom-load8 {
+    display: none;
+}
+
+.height-linha {
+    height: 20px;
+}
+
+.bb-musicas {
+    border-bottom: 1px solid #a59a8c;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.imgs-album {
+    padding-top: 2%;
+}
+/* produtos da banda --------------------------------------------------------------------------------------------------------------*/
+h5{
+    padding: 0;
+    margin: 0;
+}
+.card-text-meu {
+    font-size: 1.2em;
+    color: gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.link-produto {
+    color: #556b2f;
+    font-size: 1.2em;
+}
+
+.link-produto:hover {
+    color:#000000;
+    text-decoration: underline #556b2f;
+}
+
+.borda-link:hover {
+    text-decoration: none;
+    border: 2px solid #556b2f;
+}
+
+.bg-compra {
+    background-color: #cacaca;
+}
+
+.card{
+    font-size: 1em;
+    width: 30%;
+    height: auto;
+}
+
+.card-title{
+    margin-bottom: 35px;
+    padding: 0;
+   
+}
+
+.ajusta-carrossel {
+    padding-left: 4% ;
+}
+
+.corrige-produtos {
+    height: 30px;
+    border: 1px solid purple;
+}
+/* fale conosco / fooder --------------------------------------------------------------------------------------------------------------*/
+#contatos {
+    padding-top: 100px;
+}
+
+.border-none:hover {
+    border-left: none;
+}
+
+.fundo-transparente {
+    border-radius: 0px;
+    background-color: #17200800;
+}
+
+.txt-ind {
+    text-indent: 25px;
+}
+
+.text-contatos {
+    color: #6d883e;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 19%;
+    height: 2.5%;
+    font-size: 1.2em;
+    padding: 8px 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icons a {
+    color: #fdfdfd;
+}
+
+.icons a:active {
+    position: relative;
+    top: 2px;
+}
+
+.icons:hover {
+    box-shadow: 1px 1px 2px black;
+    background: linear-gradient(45deg, #677949, #304706, #202c0a);
+}

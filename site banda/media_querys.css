@@ -1,0 +1,55 @@
+/* xl */
+@media (max-width: 1399.98px){
+    .z-img-banner-xl{top: 50%;}
+    .proximo-show-xl{padding-bottom: 50px;}
+    .tam-fotos{width: 25%;}
+    .ajeita-topo{margin-top: 0;}
+}
+/* lg */
+@media (max-width: 1199.98px){
+    .z-img-banner-lg{top: 50%;}
+    .tam-fotos{width: 25%;}
+    .quebra-lg, .quebra2-lg{display: none;}
+    .ajeita-topo{margin-top: -2.5%;}
+    
+}
+/* md */
+@media (max-width: 991.98px){
+    .z-img-banner-md{top: 30%;}
+    .tam-fotos-md{width: 50%;}
+    .icons-md{width: 18%;}
+}  
+/* sm */
+@media (max-width: 767.98px){
+    .z-img-banner-sm{top: 30%;}
+    .fundo-transp-sm{margin-top: -1%;}
+    .efeito-fundo-sm{display: none;}
+    .bio-sm{margin-bottom: 0px; padding-bottom: 1%;}
+    .tam-fotos-sm{width: 50%;}
+    .imgs-album-sm{height: 230px; padding-top: 5%;}
+    .redes-sm{width: 25%;}
+} 
+/* xs */
+@media (max-width: 575.98px){
+    .z-img-banner-sm{top: 25%;}
+    .tam-font-xs{font-size: 0.5em;}
+    .fundo-bio-xs{background-image: url(imagens/xs3.png);}
+    .show-text-xs{padding-top: 5%; font-size: 0.9em;}
+    .show-text1-xs{padding-top: 0; font-size: 0.9em;}
+    .ajusta-img-xs{width: 18%;}
+    .shows-xs{font-size: 0.8em; background-image: url(imagens/xs2.png);}
+
+
+    .albuns-titulo-xs{font-size: 1.8em; width: 100%;  text-align: center;}
+    .imgs-album-xs{padding-top: 20%; width: 70%; height: auto; margin: auto;}
+    .ajusta-carrossel-xs{padding-left: 0;}
+    .carousel-inner-xs{width: 100%; margin-left: 5%;}
+    .card-xs{width: 30%; padding: 0; margin: 0;}
+    .card-nome-xs{font-size: 0.8em;}
+    .tam-produtos-xs{font-size: 0.8em; margin: 0;}
+    .tam-fale-xs{ text-indent: 0;}
+    .form-tam-xs{height: 27.5%; margin: auto;}
+    .form-tam-ms-xs{height: auto;}
+    .redes-xs{width: 40%;}
+    .icons-xs{width: 18%; height: 2%;}
+} 

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="home">
+    <head>
+        <!-- Link
+            https://i.pinimg.com/originals/50/c1/c6/50c1c6dee15db7ac4d7fbe7721bf194d.jpg
+
+            deixar o site totalmente responsivo
+        -->
+        
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" defer>
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" defer>
+        
+        <!-- Babel-script -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js" defer></script>
+        
+        <!-- js-meu -->
+        <script src="script.js" defer></script>
+        
+        <!-- Estilo customizado -->
+        <link rel="stylesheet" type="text/css" href="estilo.css" defer>
+        <link rel="stylesheet" type="text/css" href="media_querys.css" defer>
+
+        <title>System Of A Down - Page</title>
+        <link rel="icon" href="imagens/favicon.png">
+    </head>
+    <body onload='ferificaTam()' class="bg-darkgreen text-light">
+        <header>
+            <!-- menu - nav -------------------------------------------------------------->
+            <nav class="bg-darkgreen fixed-top text-monospace  p-2 justify-content-center">
+                <button class="format-button" id="navegacao-md" type="button" style="display: none;">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <div id="navegacao"></div>
+                <div id="navegacao-normal">
+                    <ul class="tam-font tam-font-xs nav justify-content-center"> 
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#sobre">SOBRE A BANDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#agenda">AGENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#height">FOTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver " href="#musica">MÚSICA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#produtos">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-oliver" href="#contatos">CONTATOS</a>
+                    </li>
+                </ul>
+                </div>
+                
+            </nav>
+            </header>
+            <!-- banners - carrossel --------------------------------------------------------->
+            <section class="row mt-5">
+                <div class="">
+                    <img class="img-fluid" src="imagens/bg-banner2.jpg" width="100%" height="auto">
+                    <div class="col-lg pelicula-banner"></div>
+                        <div class="logo-name px-5 float-left">System Of A Down</div>
+                        <img class="img-fluid z-img-banner-sm z-img-banner-md z-img-banner-lg z-img-banner-xl z-img-banner" src="imagens/banner1.png">                   
+                    
+                </div>
+            </section>
+            <!-- imagens / biografia ------------------------------------------------------------>
+            <section>
+                <div id="sobre" class="row principal">
+                    <div class="col-xl-5 d-xl-block d-none">
+                        <div class="img1 row">
+                            
+                        </div>
+                        <div class="img2 row">
+                            <img src="imagens/daron_malakian.png" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="fundo-bio fundo-bio-xs col-12 col-xl-7">
+                        <div class="fundo-transp fundo-transp-sm">
+                            <div class="proximo-show proximo-show-xl col-xl-12 float-none col-md-7 float-md-right ml-5 pt-3">
+                                <div class="linha mt-5"></div>
+                                <h3 class="mb-0 shadow-text">PRÓXIMO</h3>
+                                <h3 class="mt-0 shadow-text">SHOW</h3>
+                                <h1 class="mt-5 float-left shadow-text mb-0">04</h1><h4 class="pt-1 pl-2 mt-5 mb-0 float-left shadow-text">Fev</h4>
+                                <br><br><br>  
+                                <h4 class="mt-4 show-text-xs float-none text-oliver-true shadow-text mb-0">ESTÚDIO AO VIVO TRANSAMÉRICA</h4>
+                                <h6 class="mt-1 show-text-xs1 shadow-text">ESTÁDIO ALLIANZ PARQUE</h6>
+                            </div>
+                            <div class="bio bio-sm pt-2 col-md-4 float-md-left col-xl-6">
+                                <h3 class="pl-5 titulos-xs pt-3">Biografia</h3>
+                                <pclass="pl-4 bio-text-sm">
+                                    O System Of a Down é uma banda californiana formada pelo quarteto de descendentes de armênios Serj Tankian (vocal), Shavo Odadjian (baixo), Daron Malakian (guitarra) e John Dolmayan (bateria). Em 1993 a banda começou a surgir de um encontro acidental de dois de seus membros, Serj e Daron, em um estúdio onde cada um ensaiava com sua própria banda. Eles logo perceberam que tinham muitos interesses musicais em comum e montaram a banda Soil. Shavo e John se juntaram aos outros membros em encontros por causa de aparições da banda na comunidade armena ou em clubes da região e finalmente surgiu o System Of A Down.
+                                </p>
+                                <div class="efeito-fundo efeito-fundo-sm"></div>
+                            </div>
+                            <div class="integrantes col-xl-12 col-sm-12">
+        
+                                <h2 class="ml-4 mt-4 pt-3 pt-3 titulo-integrantes-xs pb-2">Integrantes</h2>
+                                <div class="integrantes-elenco">
+                                    <div class="rounded ajusta-img ajusta-img-xs float-left ml-1 mr-3">
+                                        <img class="rounded-top img-fluid w-100 h-75" src="imagens/serj.png">
+                                        <p class="pt-1 pl-2">Guitarrista</p>
+                                        <h5 class="text-dark pt-1 mt-0 mb-2 pl-2 names">Serj Tankian</h5>
+                                    </div>
+                                    <div class="rounded ajusta-img ajusta-img-xs float-left ml-1 mr-3">
+                                        <img class="rounded-top img-fluid w-100 h-75" src="imagens/1.png">
+                                        <p class="pt-1 pl-2">Guitarrista</p>
+                                        <h5 class="text-dark pt-1 mt-0 mb-2 pl-2 names">Daron Malakian</h5>
+                                    </div>
+                                    <div class="rounded ajusta-img ajusta-img-xs float-left ml-1 mr-3">
+                                        <img class="rounded-top img-fluid w-100 h-75" src="imagens/2.png">
+                                        <p class="pt-1 pl-2">Baixista</p>
+                                        <h5 class="text-dark pt-1 mt-0 mb-2 pl-2 names">Shavo Odadjian</h5>
+                                    </div>
+                                    <div class="rounded ajusta-img ajusta-img-xs float-left ml-1">
+                                        <img class="rounded-top img-fluid w-100 h-75" src="imagens/3.png">
+                                        <p class="pt-1 pl-2">Bateria</p>
+                                        <h5 class="text-dark pt-1 mt-0 mb-2 pl-2 names">John Dolmayan</h5>
+                                    </div>
+                                </div>
+                                    
+                                </div>     
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- agenda / shows  ---------------------------------------------------------------------->
+            <section id="agenda" class="row shows shows-xs">
+                <div class="quebra quebra-lg"></div>
+                <div class="col-sm fundo-trasp-shows">
+                    <div class=" margin-auto">
+                        <div class="margin-auto mt-5 linha-shows"></div>
+                        <h1 class="text-center titulos-xs mt-5">Agenda de Shows</h1>
+                        <table class="mt-5 mb-5 col-sm-12 col-lg-6 margin-auto">
+                            <tbody>
+                              <tr>
+                                <th>10 de Fevereiro</th>
+                                <td class="text-warning">Show no Mineirão</td>
+                                <td class="pl-table">Belo Horizonte, MG</td>
+                              </tr>
+                              <tr>
+                                <th>15 de Fevereiro</th>
+                                <td class="text-warning">Show no Ipatingão</td>
+                                <td class="pl-table">Ipatinga, MG</td>
+                              </tr>
+                              <tr>
+                                <th>17 de Fevereiro</th>
+                                <td class="text-warning">Abertura Show do Calypso</td>
+                                <td class="pl-table">Belém, PA</td>
+                              </tr>
+                              <tr>
+                                <th class="border-0">19 de Setembro</th>
+                                <td class="text-warning border-0">Aniversário da Cidade</td>
+                                <td class="pl-table border-0">Guarapari, ES</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div id="height" class="col-sm-10 margin-auto height-shows d-flex justify-content-center">
+                        <div class="position-absolute margin-auto mx-5 px-5 mt-2 mb-manual linha-shows"></div>
+                        <br>
+                        <h1 class="mt-4 titulos-xs position-absolute mtop-fotos">Fotos</h1>
+                        <div id="transition" class="fotos mx-auto d-flex flex-wrap">
+                            <img id="f1" src="imagens/nao_usadas/1.png" class="tam-fotos tam-fotos-md tam-fotos-sm shadow-fotos z-2 img-fluid float-left">
+                            <img id="f2" src="imagens/nao_usadas/2.png" class="tam-fotos tam-fotos-md tam-fotos-sm shadow-fotos z-2 img-fluid float-left">
+                            <img id="f3" src="imagens/nao_usadas/3.png" class="tam-fotos tam-fotos-md tam-fotos-sm shadow-fotos z-2 img-fluid float-left">
+                            <img id="f4" src="imagens/nao_usadas/4.png" class="tam-fotos tam-fotos-md tam-fotos-sm shadow-fotos z-2 img-fluid float-left">    
+                            <button onclick="click2()" class="d-flex justify-content-center z-2 position-absolute" type="button" id="mais"><i class="fas fa-angle-up"></i></button><button onclick="click1()" class="position-absolute z-2 d-flex justify-content-center" type="button" id="menos"><i class="fas fa-angle-down"></i></button>
+                            <img src="imagens/nao_usadas/5.png" class="tam-fotos tam-fotos-md tam-fotos-sm img-fluid z-1 float-none">
+                            <img src="imagens/nao_usadas/6.png" class="tam-fotos tam-fotos-md tam-fotos-sm img-fluid z-1 float-left">
+                            <img src="imagens/nao_usadas/7.png" class="tam-fotos tam-fotos-md tam-fotos-sm img-fluid z-1 float-left">
+                            <img src="imagens/nao_usadas/8.png" class="tam-fotos tam-fotos-md tam-fotos-sm img-fluid z-1 float-left">
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <!-- albuns  ---------------------------------------------------------------------->
+            <section id="musica" class="ajeita-topo">
+                <div class="quebra2 quebra2-lg"></div>
+                <div class="albuns p-5 mt-3 row">                   
+                    <div class="col-sm-12 d-flex flex-content-center">
+                        <h2 class="mb-3 titulos-xs mx-auto">Ouça nossas músicas</h2>
+                    </div>                   
+                    <div class="col-sm-12 margin-auto d-flex flex-wrap">
+                        
+                        <img src="imagens/album1.jpg" width="40%" height="auto" class="imgs-album imgs-album-sm imgs-album-xs mt-4 mb-3 img-fluid">
+                        <div class="tam-musicas-xs  col-12 col-sm-6 pt-sm-5 pl-sm-5 d-flex flex-column">
+                            <h4 class="albuns-titulo-xs text-oliver-true mr-sm-5 mb-2 mb-sm-5 font-italic">Toxicity - 2001(4 de 14)</h4>
+                            <audio id="alb1-m1"><source src="album1/alb1-toxicity.mp3" type="audio/mp3"></audio>
+                            <div id="text-oliver1"><i type="button" id="buttom-play1" onclick="audio(value=1), tempo(30), startC(clicks=1), verificaId(n=1)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load1" onclick="load(value=1), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Toxicity<div class="float-right pt-1 insereTempo"></div></div>
+                            
+                            <div class="bb-musicas"></div>
+                            
+                            <audio id="alb1-m2"><source src="album1/alb1-Jet Pilot.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver2"><i type="button" id="buttom-play2" onclick="tempo(30), startC(clicks=1), audio(value=2), verificaId(n=2)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load2" onclick="load(value=2), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Jet Pilot<div class="float-right pt-1 insereTempo"></div></div>                           
+                            <div class="bb-musicas"></div>
+
+                            <audio id="alb1-m3"><source src="album1/alb1-Prison Song.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver3"><i type="button" id="buttom-play3" onclick="tempo(30), startC(clicks=1), audio(value=3), verificaId(n=3)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load3" onclick="load(value=3), startC(clicks=2), stopC()" class="text-oliver-true mr-0 mr-sm-1 p-sm-2 far fa-pause-circle"></i>Prison Song<div class="float-right pt-1 insereTempo"></div></div>  
+                            <div class="bb-musicas"></div>
+
+                            <audio id="alb1-m4"><source src="album1/alb1-Forest.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver4"><i type="button" id="buttom-play4" onclick="tempo(30), startC(clicks=1), audio(value=4), verificaId(n=4)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load4" onclick="load(value=4), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Forest<div class="float-right pt-1 insereTempo"></div></div>  
+        
+                        </div>
+                        <img src="imagens/album2.jpg" width="40%" height="auto" class="imgs-album imgs-album-sm imgs-album-xs mt-4 mb-3 img-fluid">
+                        <div class="tam-musicas-xs col-12 col-sm-6 pt-sm-5 pl-sm-5">
+                            <h4 class="albuns-titulo-xs text-oliver-true mr-sm-5 mb-sm-5 font-italic">Hypnotize - 2005(4 de 12)</h4>
+                            <audio id="alb2-m1"><source src="album2/alb2-Attack.mp3" type="audio/mp3"></audio>
+                            <div id="text-oliver5"><i type="button" id="buttom-play5" onclick="tempo(30), startC(clicks=1), audio(value=5), verificaId(n=5)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load5" onclick="load(value=5), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Attack<div class="float-right pt-1 insereTempo"></div></div>  
+                            <div class="bb-musicas"></div>
+                            
+                            <audio id="alb2-m2"><source src="album2/alb2-Soldier Side.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver6"><i type="button" id="buttom-play6" onclick="tempo(30), startC(clicks=1), audio(value=6), verificaId(n=6)"  class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load6" onclick="load(value=6), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Soldier Side<div class="float-right pt-1 insereTempo"></div></div>  
+                            <div class="bb-musicas"></div>
+
+                            <audio id="alb2-m3"><source src="album2/alb2-Stealing Society.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver7"><i type="button" id="buttom-play7" onclick="tempo(30), startC(clicks=1), audio(value=7), verificaId(n=7)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load7" onclick="load(value=7), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Stealing Society<div class="float-right pt-1 insereTempo"></div></div>  
+                            <div class="bb-musicas"></div>
+
+                            <audio id="alb2-m4"><source src="album2/alb2-Holy Mountains.mp3" type="audio/mp3"></audio>
+                            <div class="mt-2" id="text-oliver8"><i type="button" id="buttom-play8" onclick="tempo(30), startC(clicks=1), audio(value=8), verificaId(n=8)" class="text-oliver-true mr-sm-1 p-sm-2 far fa-play-circle"></i><i type="button" id="buttom-load8" onclick="load(value=8), startC(clicks=2), stopC()" class="text-oliver-true mr-sm-1 p-sm-2 far fa-pause-circle"></i>Holy Mountains<div class="float-right pt-1 insereTempo"></div></div>  
+        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- produtos  ---------------------------------------------------------------------->
+            <section id="produtos" class="border border-warning">
+                <div class="p-5 row bg-compra bg-compra-lg bg-compra-sm">
+                    <div class="margin-auto mt-2 mb-5 linha-shows"></div>
+                    <div class="col-sm-12 d-flex flex-content-center">
+                        <h2 class="titulos-xs mb-5 mx-auto text-dark">Produtos da Banda</h2>
+                    </div>    
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide slide-lg slide-sm slide-xl bg-compra mx-auto" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner carousel-inner-xs m-0 p-0 d-flex justify-content-between">
+                                <div class="ajusta-carrossel ajusta-carrossel-xs m-0 p-0 mx-auto d-flex justify-content-between">
+                                    <div class="carousel-item active justify-content-center align-items-center">
+                                        
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 ml-lg-5 ml-md-2 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                        
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                    </div>
+                                    <div class="carousel-item justify-content-between">
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left ml-lg-5 ml-md-2">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                    </div>
+                                    <div class="carousel-item justify-content-between">
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left ml-lg-5 ml-md-2">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                      
+                                
+                                            <div class="card card-xs mr-1 p-0 mt-sm-2 mb-sm-3 mr-sm-3 float-left">
+                                                <img src="imagens/camisa1.jpg" class="borda-link card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-nome-sm card-nome-xs text-dark">Camiseta Masculina System Of A Down</h5>
+                                                    <p class="card-text-meu tam-produtos-xs">camiseta</p>
+                                                    <a href="#" class="link-produto tam-produtos-xs">39,99 R$</a>
+                                                </div>
+                                            </div>
+                                    
+                                    </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </section>
+            <!-- footer / contato  ---------------------------------------------------------------------->
+            <footer id="contatos">
+                <div class="p-5 row d-flex flex-column">
+                    <div class="margin-auto mt-2 mb-1 linha-shows"></div>
+                    <div class="col-xs-12 col-sm-12 col-lg-8 mt-5 mb-5 margin-auto pb-5">
+                        <div class="row">
+                            <div class="col-8 d-flex flex-column margin-auto mb-2">
+                                <h3 class="titulos-xs margin-auto pb-5">Fale Conosco</h3>
+                                <p class="txt-ind text-center tam-fale-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="text-contatos">Duis non mi augue. Sed quis tincidunt magna, vel ornare felis.</span> Integer dictum nibh a pellentesque hendrerit.</p>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control form-tam-xs text-uppercase mb-2 w-100 fundo-transparente" placeholder="Digite seu nome">
+                                    <input type="email" class="form-control form-tam-xs text-uppercase mb-2 fundo-transparente" id="email1" aria-describedby="emailHelp" placeholder="Digite seu email">
+                                    <input type="tel" class="form-control form-tam-xs text-uppercase fundo-transparente" id="tel1" aria-describedby="tel" placeholder="Digite seu telefone">
+                                </div>
+                                <div class="col-6">
+                                    <textarea class="form-control form-tam-ms-xs w-100 h-100 fundo-transparente" id="exampleFormControlTextarea1" rows="3" placeholder="MENSAGEM"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="redes redes-xs">
+                        <div class="icons icons-md icons-xs">
+                           <a href="https://www.instagram.com/yveslima.silva.1/">
+                               <i class="fab fa-instagram fa-1x"></i>
+                           </a> 
+                        </div>
+                        <div class="icons icons-md icons-xs">
+                            <a href="https://www.facebook.com/yveslima.silva.1/">
+                                <i class="fab fa-facebook fa-1x"></i>
+                            </a> 
+                        </div>
+                        <div class="icons icons-md icons-xs">
+                            <a href="https://twitter.com/Yveslima4">
+                                <i class="fab fa-twitter fa-1x"></i>
+                            </a> 
+                        </div>
+                        <div class="icons icons-md icons-xs">
+                            <a href="https://github.com/yvesls">
+                                <i class="fab fa-github fa-1x"></i>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="margin-auto mb-1 tam-fale-xs text-uppercase font-weight-bold"><p style="font-size: 0.8em;">@2021-System of a Down-Todos os direitos reservados</p></div>
+                </div>
+            </footer>
+        </div>
+
+        
+    <!-- js-bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
