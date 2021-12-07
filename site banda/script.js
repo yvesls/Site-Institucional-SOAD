@@ -1,5 +1,5 @@
 // navegação para md
-function ferificaTam(){
+function verificaTam(){
     if(window.innerWidth >= 768){
         document.getElementById('navegacao-md').style.display = 'none';
         document.getElementById('navegacao-normal').style.display = 'block';
