@@ -141,11 +141,6 @@ li{
     z-index: 2;
 }
 
-
-.tam-font {
-    font-size:1em;
-}
-
 .linha {
     background-color: #556b2f;
     width: 50px;
@@ -185,7 +180,6 @@ li{
 
 .bio p {
     text-indent: 15px;
-    font-size: 0.9em;
     padding-right: 1%;
 }
 
@@ -202,16 +196,11 @@ li{
 /* biografia - integrantes --------------------------------------------------------------------------------------------------------------*/
 .integrantes {
     z-index: 1;
-    font-size: 0.8em;
     float: right;
     background-color: darkolivegreen;
     height: auto;
     padding-top: 2%;
     padding-bottom: 4%;
-}
-
-.names {
-    font-size: 1.2em;
 }
 
 .integrantes-elenco {
@@ -238,7 +227,6 @@ li{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: auto;
-    font-size: 1rem;
     margin-top: -1%;
     background-color: #172008;
 }
@@ -382,7 +370,6 @@ h5{
     margin: 0;
 }
 .card-text-meu {
-    font-size: 1.2em;
     color: gray;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -390,7 +377,6 @@ h5{
 
 .link-produto {
     color: #556b2f;
-    font-size: 1.2em;
 }
 
 .link-produto:hover {
@@ -408,15 +394,13 @@ h5{
 }
 
 .card{
-    font-size: 1em;
-    width: 30%;
+    width: 23%;
     height: auto;
 }
 
 .card-title{
     margin-bottom: 35px;
     padding: 0;
-   
 }
 
 .ajusta-carrossel {
@@ -462,7 +446,6 @@ h5{
     justify-content: center;
     width: 19%;
     height: 2.5%;
-    font-size: 1.2em;
     padding: 8px 0;
     border-radius: 50%;
     overflow: hidden;

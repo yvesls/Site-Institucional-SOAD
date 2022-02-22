@@ -4,7 +4,6 @@
     .proximo-show-xl{padding-bottom: 50px;}
     .tam-fotos{width: 25%;}
     .ajeita-topo{margin-top: 0;}
-    .bio-text {font-size: 1.2em;}
 }
 /* lg */
 @media (max-width: 1199.98px){
@@ -33,19 +32,17 @@
 /* xs */
 @media (max-width: 575.98px){
     .z-img-banner-sm{top: 25%;}
-    .tam-font-xs{font-size: 0.5em;}
     .fundo-bio-xs{background-image: url(imagens/xs3.png);}
-    .show-text-xs{padding-top: 5%; font-size: 0.9em;}
-    .show-text1-xs{padding-top: 0; font-size: 0.9em;}
+    .show-text-xs{padding-top: 5%;}
+    .show-text1-xs{padding-top: 0;}
     .ajusta-img-xs{width: 18%;}
-    .shows-xs{font-size: 0.8em; background-image: url(imagens/xs2.png);}
-    .albuns-titulo-xs{font-size: 1.8em; width: 100%;  text-align: center;}
+    .shows-xs{background-image: url(imagens/xs2.png);}
+    .albuns-titulo-xs{width: 100%;  text-align: center;}
     .imgs-album-xs{padding-top: 20%; width: 70%; height: auto; margin: auto;}
     .ajusta-carrossel-xs{padding-left: 0;}
     .carousel-inner-xs{width: 100%; margin-left: 5%;}
     .card-xs{width: 30%; padding: 0; margin: 0;}
-    .card-nome-xs{font-size: 0.8em;}
-    .tam-produtos-xs{font-size: 0.8em; margin: 0;}
+    .tam-produtos-xs{margin: 0;}
     .tam-fale-xs{ text-indent: 0;}
     .form-tam-xs{height: 27.5%; margin: auto;}
     .form-tam-ms-xs{height: auto;}
