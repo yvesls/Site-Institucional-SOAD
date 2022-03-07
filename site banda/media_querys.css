@@ -35,15 +35,18 @@
     .fundo-bio-xs{background-image: url(imagens/xs3.png);}
     .show-text-xs{padding-top: 5%;}
     .show-text1-xs{padding-top: 0;}
-    .ajusta-img-xs{width: 18%;}
+    .ajusta-img-xs{width: 22%;}
+    .ajusta-img-xs p {font-size: 0.85em;}
+    .ajusta-img-xs h5 {font-size: 0.9em;}
     .shows-xs{background-image: url(imagens/xs2.png);}
     .albuns-titulo-xs{width: 100%;  text-align: center;}
     .imgs-album-xs{padding-top: 20%; width: 70%; height: auto; margin: auto;}
     .ajusta-carrossel-xs{padding-left: 0;}
-    .carousel-inner-xs{width: 100%; margin-left: 5%;}
-    .card-xs{width: 30%; padding: 0; margin: 0;}
+    .carousel-inner-xs{width: 100%;}
+    .card-xs{width: 23%; padding: 0; margin: 0;}
+    .card-nome-xs {font-size: 0.7em;}
     .tam-produtos-xs{margin: 0;}
-    .tam-fale-xs{ text-indent: 0;}
+    .tam-fale-xs{text-indent: 0;}
     .form-tam-xs{height: 27.5%; margin: auto;}
     .form-tam-ms-xs{height: auto;}
     .redes-xs{width: 40%;}
