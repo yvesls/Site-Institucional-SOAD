@@ -1,4 +1,5 @@
-// navegação para md
+// navegação para md (hamburguer) - necessário atualizar a página para aparecer (caso esteja no pc) -----------------------------------------------------------------------------------------
+
 function verificaTam(){
     if(window.innerWidth >= 768){
         document.getElementById('navegacao-md').style.display = 'none';
@@ -18,14 +19,14 @@ for(var i = 0; i < button.length; i++){
     button[0].addEventListener('click', navegacaoMd);
 }
 
-// criando elementos da nav-md
+// criando elementos da nav-md - Necessita ser otimizado
 function criaElementos(){
     let ul = document.createElement('ul');
     let idUl = document.createAttribute("id");
     ul.setAttributeNode(idUl);
     idUl.value = "nav-formatacao";
 
-    // criando li não dinamicamente hehe
+    // criando li (nav-md) não dinamicamente hehe 
     let li1 = document.createElement('li'); let li2 = document.createElement('li'); let li3 = document.createElement('li');
     let li4 = document.createElement('li'); let li5 = document.createElement('li'); let li6 = document.createElement('li'); let li7 = document.createElement('li');
     
@@ -65,7 +66,8 @@ function criaElementos(){
 }
 
 let x = 0;
-function navegacaoMd(){
+
+function navegacaoMd(){ // continuação nav-md - Necessita ser otimizado
     if(x == 0){
         let nav = document.getElementById('nav');
         let button = document.getElementById('button');
@@ -109,6 +111,9 @@ function fechaJanela(){
     x = 0;
 }
 
+// fim nav-md
+
+// começo button galeria - Necessita ser otimizado -----------------------------------------------------------------------------------------
 function click1(){
     let restauraTamanho = document.getElementById("height");
     restauraTamanho.style.height = "auto";
@@ -164,124 +169,70 @@ function click2(){
     }
 }
 
-function audio(value){
-    if(value == 1){
-        document.getElementById("alb1-m1").play();
-        document.getElementById("buttom-play1").style.display = 'none';
-        document.getElementById("buttom-load1").style.display = 'inline-block';
-        document.getElementById("text-oliver1").style.textDecoration = 'underline';
-    }
-    else if(value == 2){
-        document.getElementById("alb1-m2").play();
-        document.getElementById("buttom-play2").style.display = 'none';
-        document.getElementById("buttom-load2").style.display = 'inline-block';
-        document.getElementById("text-oliver2").style.textDecoration = 'underline';
-    }
-    else if(value == 3){
-        document.getElementById("alb1-m3").play();
-        document.getElementById("buttom-play3").style.display = 'none';
-        document.getElementById("buttom-load3").style.display = 'inline-block';
-        document.getElementById("text-oliver3").style.textDecoration = 'underline';
-    }
-    else if(value == 4){
-        document.getElementById("alb1-m4").play();
-        document.getElementById("buttom-play4").style.display = 'none';
-        document.getElementById("buttom-load4").style.display = 'inline-block';
-        document.getElementById("text-oliver4").style.textDecoration = 'underline';
-    }
-    else if(value == 5){
-        document.getElementById("alb2-m1").play();
-        document.getElementById("buttom-play5").style.display = 'none';
-        document.getElementById("buttom-load5").style.display = 'inline-block';
-        document.getElementById("text-oliver5").style.textDecoration = 'underline';
-    }
-    else if(value == 6){
-        document.getElementById("alb2-m2").play();
-        document.getElementById("buttom-play6").style.display = 'none';
-        document.getElementById("buttom-load6").style.display = 'inline-block';
-        document.getElementById("text-oliver6").style.textDecoration = 'underline';
-    }
-    else if(value == 7){
-        document.getElementById("alb2-m3").play();
-        document.getElementById("buttom-play7").style.display = 'none';
-        document.getElementById("buttom-load7").style.display = 'inline-block';
-        document.getElementById("text-oliver7").style.textDecoration = 'underline';
-    }
-    else if(value == 8){
-        document.getElementById("alb2-m4").play();
-        document.getElementById("buttom-play8").style.display = 'none';
-        document.getElementById("buttom-load8").style.display = 'inline-block';
-        document.getElementById("text-oliver8").style.textDecoration = 'underline';
-    }
-}
+// fim button galeria
 
-function load(value){
-    if(value == 1){
-        document.getElementById("alb1-m1").load();
-        document.getElementById("alb1-m1").pause();
-        document.getElementById("buttom-play1").style.display = 'inline-block';
-        document.getElementById("buttom-load1").style.display = 'none';
-        document.getElementById("text-oliver1").style.textDecoration = 'none';
-    }
-    else if(value == 2){
-        document.getElementById("alb1-m2").load();
-        document.getElementById("alb1-m2").pause();
-        document.getElementById("buttom-play2").style.display = 'inline-block';
-        document.getElementById("buttom-load2").style.display = 'none';
-        document.getElementById("text-oliver2").style.textDecoration = 'none';
-    }
-    else if(value == 3){
-        document.getElementById("alb1-m3").load();
-        document.getElementById("alb1-m3").pause();
-        document.getElementById("buttom-play3").style.display = 'inline-block';
-        document.getElementById("buttom-load3").style.display = 'none';
-        document.getElementById("text-oliver3").style.textDecoration = 'none';
-    }
-    else if(value == 4){
-        document.getElementById("alb1-m4").load();
-        document.getElementById("alb1-m4").pause();
-        document.getElementById("buttom-play4").style.display = 'inline-block';
-        document.getElementById("buttom-load4").style.display = 'none';
-        document.getElementById("text-oliver4").style.textDecoration = 'none';
-    }
-    else if(value == 5){
-        document.getElementById("alb2-m1").load();
-        document.getElementById("alb2-m1").pause();
-        document.getElementById("buttom-play5").style.display = 'inline-block';
-        document.getElementById("buttom-load5").style.display = 'none';
-        document.getElementById("text-oliver5").style.textDecoration = 'none';
-    }
-    else if(value == 6){
-        document.getElementById("alb2-m2").load();
-        document.getElementById("alb2-m2").pause();
-        document.getElementById("buttom-play6").style.display = 'inline-block';
-        document.getElementById("buttom-load6").style.display = 'none';
-        document.getElementById("text-oliver6").style.textDecoration = 'none';
-    }
-    else if(value == 7){
-        document.getElementById("alb2-m3").load();
-        document.getElementById("alb2-m3").pause();
-        document.getElementById("buttom-play7").style.display = 'inline-block';
-        document.getElementById("buttom-load7").style.display = 'none';
-        document.getElementById("text-oliver7").style.textDecoration = 'none';
-    }
-    else if(value == 8){
-        document.getElementById("alb2-m4").load();
-        document.getElementById("alb2-m4").pause();
-        document.getElementById("buttom-play8").style.display = 'inline-block';
-        document.getElementById("buttom-load8").style.display = 'none';
-        document.getElementById("text-oliver8").style.textDecoration = 'none';
+// começo audio demonstrativo - Necessita ser otimizado -----------------------------------------------------------------------------------------
+function audio(value){
+    console.log('entrou em audio')
+    let i = 1;
+
+    while(i != 9){
+        if(value == i){
+            let audio1 = document.getElementById(value)
+            audio1.volume = 0.05;
+            disablePlays(value);
+        }
+        i++;
     }
 }
 
 var cronometro;
-var segundos = 30;
 
-function tempo(){
-    document.getElementsByClassName("insereTempo").innerHTML = '00 : 30';   
+function disablePlays(play){
+
+    for(let i = 1; i<=8; i++){
+        if(play != i){
+                      
+            document.getElementById(i).pause();
+            document.getElementById('buttom-play'+i).removeEventListener("click", startC);
+            document.getElementById('buttom-play'+i).style.display = 'inline-block';
+            document.getElementById("buttom-load"+i).style.display = 'none';
+            document.getElementById("text-oliver"+i).style.textDecoration = 'none';
+            document.getElementsByClassName("insereTempo")[i-1].innerHTML = '';  
+            document.getElementById(i).currentTime = 0;
+
+        }else {
+            tempo(i);
+            segundos = 30;
+            cronometro = 30;
+            stopC();
+            document.getElementById('buttom-play'+i).addEventListener('click', startC(1));
+            document.getElementById(i).currentTime = 0;
+            document.getElementById(i).play();
+            document.getElementById('buttom-play'+i).style.display = 'none';
+            document.getElementById("buttom-load"+i).style.display = 'inline-block';
+            document.getElementById("text-oliver"+i).style.textDecoration = 'underline';
+        }
+    }
 }
 
-cronometro = 30;
+function load(value){
+    let i = 1;
+    while(i != 9){
+        if(value == i){
+            document.getElementById(value).load();
+        }
+        i++;
+    }
+}
+
+
+let segundos = 30;
+
+function tempo(i){
+    document.getElementsByClassName("insereTempo")[i].innerHTML = '00 : 30';  
+}
+
 let start;
 
 var id;
@@ -307,10 +258,12 @@ function verificaId (n){
 }
 
 function startC(clicks){ //função start cronometro
-
+    
     if(clicks == 1){ //só executa uma vez
         start = setInterval( funcC, 1000 )
+        console.log('click == 1')
     }else if (clicks == 2){
+        console.log('click == 2')
         location.reload('insereTempo');
         document.getElementsByClassName('insereTempo').innerHTML = '';
     }
@@ -327,14 +280,13 @@ function funcC (){ // função geral de exibição e controle na saída do tempo
     
     //decai o contador 
     cronometro -= 1;
-
+    console.log('entrou')
     if(cronometro > 0){ // se, for maior que zero, continua a função
         segundos -= 1 //decai o contador de segundos
         
-        console.log(id);
-        
   
         if(cronometro < 60 && cronometro > 9){
+            console.log(cronometro)
             document.getElementsByClassName('insereTempo')[id].innerHTML = '0' + cronometro2 + ' : ' + segundos
             if(segundos < 10){
                 document.getElementsByClassName('insereTempo')[id].innerHTML = '0' + cronometro2 + ' : '  + '0' + segundos
@@ -361,4 +313,4 @@ function stopC(){ // para o cronometro por meio da variável passada
     clearInterval(start);
 }
 
-// manipulando tamanho 
+// fim audio demonstrativo
