@@ -57,7 +57,14 @@ a {
 }
 
 .text-oliver-true {
-    color: #5d831b;
+    color: #729e26;
+}
+
+h4.text-oliver-true, h4.text-oliver-true {
+    text-indent: 2px;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+    text-shadow: inset 1px 1px black;
 }
 
 a:hover {
@@ -152,7 +159,7 @@ li{
     background: url(imagens/bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 130%;
     height: auto;
 }
 
@@ -283,6 +290,14 @@ table td {
     width: 80%;
     max-width: 80%;
     height: auto;
+}
+
+.tam-fotos:hover {
+    padding: 5px;
+    border-radius: 20px;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    transition: all 0.3s;
 }
 
 #height {
@@ -444,8 +459,8 @@ h5{
 .icons {
     display: flex;
     justify-content: center;
-    width: 19%;
-    height: 2.5%;
+    width: 15%;
+    height: 3%;
     padding: 8px 0;
     border-radius: 50%;
     overflow: hidden;

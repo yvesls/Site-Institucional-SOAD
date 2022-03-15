@@ -314,3 +314,18 @@ function stopC(){ // para o cronometro por meio da variável passada
 }
 
 // fim audio demonstrativo
+
+// começo carrossel imagens
+
+function liberaVer(objeto){
+    let buttonVer = document.createElement('h3');
+    buttonVer.style.cursor = 'pointer';
+    buttonVer.style.zIndex = '1';
+    buttonVer.style.display = 'flex';
+    buttonVer.style.margin = 'auto';
+    buttonVer.style.color = 'white';
+    buttonVer.style.backgroundColor = 'black';
+    buttonVer.innerHTML = 'Ver';
+    objeto.appendChild(buttonVer);
+    console.log(buttonVer)
+}
