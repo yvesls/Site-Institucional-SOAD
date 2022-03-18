@@ -317,15 +317,24 @@ function stopC(){ // para o cronometro por meio da variável passada
 
 // começo carrossel imagens
 
-function liberaVer(objeto){
-    let buttonVer = document.createElement('h3');
-    buttonVer.style.cursor = 'pointer';
-    buttonVer.style.zIndex = '1';
-    buttonVer.style.display = 'flex';
-    buttonVer.style.margin = 'auto';
-    buttonVer.style.color = 'white';
-    buttonVer.style.backgroundColor = 'black';
-    buttonVer.innerHTML = 'Ver';
-    objeto.appendChild(buttonVer);
-    console.log(buttonVer)
+function liberaVer(objeto, i){ // objeto = imagem
+
+    objeto.style.display = 'none'; // imagem some
+    let ver = objeto.insertAdjacentHTML("beforebegin", "<h6 style='font-size: 24px; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; cursor: pointer; z-index: 2; color: white; margin-right: -100px;'>Ver</h6>");
+    let spanPai = objeto.parentNode;
+    spanPai.classList.add("img-efeito");
+    spanPai.style.backgroundImage = `url("imagens/nao_usadas/${i}.png")`;
+    console.log(spanPai)
 }
+
+function removeVer(objeto, i){ // objeto = span (pai imagem)
+    let img = objeto.lastChild; // selecionando ultimo filho (IMG)
+    img.style.display = 'block';
+    
+    objeto.style.backgroundImage = 'none';
+    console.log(objeto)
+    
+
+    objeto.removeChild(objeto.firstChild); // removendo primeiro filho (VER)
+}
+

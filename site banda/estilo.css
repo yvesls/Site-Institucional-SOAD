@@ -149,7 +149,7 @@ li{
 }
 
 .linha {
-    background-color: #556b2f;
+    background-color: #729e26;
     width: 50px;
     height: 5px;
     margin-bottom: 10px;
@@ -292,12 +292,22 @@ table td {
     height: auto;
 }
 
-.tam-fotos:hover {
+.img-efeito:hover {
     padding: 5px;
     border-radius: 20px;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
     transition: all 0.3s;
+    filter: saturate(30%);
+}
+
+.tam-fotos {
+    background-image: url(imagens/nao_usadas/1.png);
+    background-size: 100% 100%;
+}
+
+.img-efeito {
+    position: relative;
+    z-index: 1;
+    top: 0;
 }
 
 #height {
